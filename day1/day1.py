@@ -1,4 +1,4 @@
-data = [int(i.strip()) for i in open('input1').readlines()]
+data = [int(i.strip()) for i in open('input.txt').readlines()]
 
 def part1():
   prev = -1
@@ -8,6 +8,7 @@ def part1():
       if prev < row:
         inc += 1
     prev = row
+  print(inc)
 
 def part2():
   prev = -1
@@ -23,5 +24,5 @@ def part2():
 
   print(inc)
       
-
+part1()
 part2()
